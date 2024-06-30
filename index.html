@@ -1,208 +1,144 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Profil Saya</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="asset/css/styleVALUEJS.css">
-    </head>
-      <!-- 1Untuk mengisi perubahan pada form, maka akan bisa diterapkan pada form. 
-           Mengubah Button Contact menjadi Button Edit
-           hal 1 : memberikan identitas pada setiap Komponen pada script HTML Kita
-           jadi setiap komponen kita berikan nama/id supaya lebih mudah untuk mengubah nanti. 
-       -->
-    <body>
-        <nav>
-            <div class="menu-mobile">
-                 <!-- 2tambahkan -->
-                <a href="#" onclick="showMenu()">menu</a>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Maya Selvia</title>
+    <link rel="stylesheet" href="asset/css/styleVALUEJS.css">
+    <script src="asset/js/script.js" defer></script>
+</head>
+<body>
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><a href="">Maya's Profile</a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experiences">Experiences</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skill">Skill</a></li>
+                    <li><a href="#interest">Interest</a></li>
+                    <li><a href="#awards">Awards</a></li>
+                    
+                </ul>
             </div>
-            <ul id="menu">
-                <li><a href="/">HOME</a></li>
-                <li><a href="#">PRODUCT</a></li>
-                <li><a href="#">GALLERY</a></li>
-                <li><a href="#">BLOG</a></li>
-                <li><a href="#">INVENTORY</a></li>
-            </ul>
-        </nav>
-
-        <section id="box-profile">
-            <div class="img-profile">
-                <div class="photo" style="background-image: url(file:///Users/swijaya/Downloads/WFDB2/portfoliotm6/asset/image/download.jpeg)">
-                </div>
+        </div>
+    </nav>
+    <div class="wrapper">
+        <section id="home">
+            <img src="asset/image/maya selvia.jpg"/>
+            <div class="kolom">
+                <p class="deskripsi">Welcome to my profile</p>
+                <h2>Hi, Saya Maya Selvia</h2>
+                <h3>Pacitan, Jawa Timur, 63584 | +62 822 3793 0317 | mayaaselviaa@gmail.com</h3>
+                
             </div>
-            <div class="description">
-                <!-- 2Pada bagian Nama tambahkan atribut ID. penting mudah diingat dan dipahami!! 
-                kemudian pada roles kasih nama prole, lalu 
-                pada button contact ubah nama menjadi EDIT lalu value pada ahref tambahkan inputform, 
-                save - debug 
-                pada saat klik edit akan mengarah ke form input.
-
-                next
-
-                kita kasih atribut onclick=editForm pada button edit 
-
-                -->
-                <h1 id="pName">Nama Anda</h1>
-                <p id="pRole">Front End Designer</p>
-                <a href="#input-form" class="button bg-blue" onclick="editForm()">Edit</a>
-                <a href="#" class="button border-green">Resume</a>
+        </section>
+        <section id="about">
+            <div class="kolom">
+                <p class="deskripsi">About</p>
+                <h2>Tentang Saya</h2>
+                <p class="tentang-saya">Saya Maya Selvia, Sarjana Teknik Informatika Universitas Muhammadiyah Ponorogo tahun 2022. Aktivitas terakhir saat ini aktif sebagai pencari kerja dan selama kuliah menguasai ilmu multimedia. Saya memiliki minat Berkarir sebagai staff IT dan mahir mengoperasikan komputer</p>
+                
             </div>
-            <!-- 3Pada komponent class information tambahkan juga 
-                 A. id="pAvailable" pada text-gray
-                 B. id="pAvailable" pada text-gray
-                 C. id="pAvailable" pada text-gray
-                 D. id="pAvailable" pada text-gray
-
-                 Pada section Inputform kita tambahka juga masing2 input id 
-                 A. input id=inpname
-                 A. input id=inprole
-                 A. input id=inpavailability
-                 A. input id=inpage
-                 A. input id=inplocation
-                 A. input id=inpyears
-                 A. input id=inpemail
-
-                 pada tombol submit tambahkan onclik dengan function simpanform
-
-                 save.
-
-                -->
-            <div class="information">
-                <div class="data">
-                    <p class="field">Availability</p>
-                    <p id="pAvailable" class="text-gray">Full Time</p>
+            <img src="asset/image/maya.jpg"/>
+        </section>
+        <section id="experiences">
+            <div class="tengah">
+                <div class="kolom">
+                    <p class="deskripsi">Experiences</p>
+                    <h2>Pengalaman Organisasi</h2>
                 </div>
-                <div class="data">
-                    <p class="field">Usia</p>
-                    <p id="pAge" class="text-gray">19</p>
+
+                <div class="experiences-list">
+                    <div class="list-experiences">
+                        <p>HIMAKA (Himpunan Mahasiswa Teknik Informatika) 2019-2020</p>
+                        <div class="himaka">
+                        <li>Mengadakan LKMM tingkat dasar prodi Teknik Informatika</li>
+                        <li>Mencari dan memberikan solusi atas permasalahan yang ada pada lingkup prodi baik akademik maupun non akademik</li>
+                        <li>Menampung aspirasi mahasiswa Teknik Informatika</li>
+                        </div>
+                    </div>
+                    <div class="list-experiences">
+                        <p>BEM Fakultas Teknik</p>
+                        <div class="bem">
+                        <li>Membuat laporan kegiatan yang diadakan oleh departemen</li>
+                        <li>Menampung aspirasi mahasiswa lingkup teknik kepada fakultas</li>
+                        <li>Mengadakan proker Week Of Engineering fakultas teknik</li>
+                        </div>
+                    </div></div>
+                    <div class="tengah">
+                    <div class="kolom">
+                        <p class="deskripsi">Experiences</p>
+                        <h2>Pengalaman Magang</h2>
+                    </div>
+                <div class="experiences-list">
+                    <div class="list-experiences">
+                        <p>CV One Media Solution - 2021</p>
+                        <div class="onmeso">
+                        <li>Melakukan praktik trouble shooting pada komputer</li>
+                        <li>Belajar instalasi windows</li>
+                        <li>Mengajar dan menguji siswa PKL</li>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="data">
-                    <p class="field">Lokasi</p>
-                    <p id="pLocation" class="text-gray">Jakarta</p>
                 </div>
-                <div class="data">
-                    <p class="field">Pengalaman</p>
-                    <p id="pExperience" class="text-gray">2</p>
-                </div>
-                <div class="data">
-                    <p class="field">Email</p>
-                    <p id="pEmail" class="text-gray">email@gmail.com</p>
                 </div>
             </div>
         </section>
-
-        <section id="input-form">
-            <form method="#" action="#">
-                <div class="form">
-                    <label>Nama</label>
-                    <input id="inpName" type="text" name="nama" placeholder="masukkan nama anda">
-                </div>   
-                <div class="form">
-                    <label>Role</label>
-                    <input id="inpRole" type="text" name="role">
-                </div>  
-                <div class="form">
-                    <label>Availability</label>
-                    <input id="inpAvailability" type="text" name="Availability">
-                </div>  
-                <div class="form">
-                    <label>Usia</label>
-                    <input id="inpUsia" type="number" name="usia">
-                </div>  
-                <div class="form">
-                    <label>Lokasi</label>
-                    <input id="inpLokasi" type="text" name="lokasi">
-                </div>  
-                <div class="form">
-                    <label>Years Experience</label>
-                    <input id="inpYears" type="number" name="experience">
-                </div>  
-                <div class="form">
-                    <label>Email</label>
-                    <input id="inpEmail" type="email" name="email">
-                </div>            
-                <div class="form">
-                    <input onclick="simpanForm()" type="submit" name="submit" value="SUBMIT" class="bg-green">
+        <section id="education">
+            <div class="tengah">
+                <div class="kolom">
+                    <p class="deskripsi">Education</p>
+                    <h2>Pendidikan</h2>
                 </div>
-            </form>            
+
+                <div class="list-education">
+                    <li>SMP Negeri 3 Bandar</li>
+                    <li>SMA Negeri 1 Nawangan</li>
+                    <li>Universitas Muhammadiyah Ponorogo</li>
+                </div>
+            </div>
         </section>
+        <section id="skill">
+            <div class="tengah">
+                <div class="kolom">
+                    <p class="deskripsi">Skill</p>
+                    <h2>Keterampilan</h2>
 
-         <!-- 4Pertama kita buat sebuah variabel formenu mengarah ke id inputform.
-            kemudian formenu kita panggil , kita ubah dan style dan display menjadi none.
-            lalu save - debug
-            "Halaman Form Hilang" 138-139
-
-            5Fungsiberikutnya seperti editform line144-157 dan simpanform line148-150
-            EditForm
-            buat logika pada code menggunakan if dg kondisi awal
-            formMenu style displaynya none maka akan diubah jadi block, selain itu pada else
-            maka tampilannya tetap none.
-            simpan - debug
-
-            6Selanjutnya pada line 164 - 172menampilkan nama masuk dalam form nama dsterusnya. 
-            caranya buat sebuah variable name kita ambil value dengan id yang sudah didefinisikan tadi cth pName, kemudian ambil innerhtml nya lalu
-            pada bagian input nama pada form dg nama id InpName. document.getelementby id
-            lalu ubah value menjadi name yang berasal dari variable yang sudah dibuat diatas. 
-            save - debug
-
-            QUIZ = lakukan untuk file selanjutnya. 
-            save-debug.
-        -->
-
-
-        <script>
-            var formMenu = document.getElementById("input-form");
-            formMenu.style.display="none";
-            
-            function editForm(){
-                if(formMenu.style.display === "none"){
-                    formMenu.style.display = "block";
-                }else{
-                    formMenu.style.display = "none";
-                }
-
-                var name = document.getElementById("pName").innerHTML;
-                var role = document.getElementById("pRole").innerHTML;
-                var available = document.getElementById("pAvailable").innerHTML;
-                var usia = document.getElementById("pAge").innerHTML;
-                var lokasi = document.getElementById("pLocation").innerHTML;
-                var experience= document.getElementById("pExperience").innerHTML;
-                var email = document.getElementById("pEmail").innerHTML;
-
-                document.getElementById("inpName").value=name;
-                document.getElementById("inpRole").value=role;
-                document.getElementById("inpAvailability").value=available;
-                document.getElementById("inpUsia").value=usia;
-                document.getElementById("inpLokasi").value=lokasi;
-                document.getElementById("inpYears").value=experience;
-                document.getElementById("inpEmail").value=email;
-
-            }
-            
-            function simpanForm(){
-
-            }
-
-            function showMenu()
-            {
-                var menu = document.getElementById("menu");
-                var box = document.getElementById("box-profile");
-
-                if(menu.style.display === "block"){
-                    menu.style.display = "none";
-                    box.style.paddingTop = "0px";
-                }else{
-                    menu.style.display = "block";
-                    box.style.paddingTop = "125px";
-                }
-            }
-        </script>
-
-
-
-
-
-
-
-    </body>
+                    <div class="skill-list">
+                    <h3>-Pemrograman PHP</h3>
+                    <h3>-Microsoft Office</h3>
+                    <h3>-Adobe Photoshop</h3>
+                    <h3>-Manajemen Waktu</h3>
+                    <h3>-Time Work</h3>
+                    <h3>-Detail Oriented</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="interest">
+            <div class="tengah">
+                <div class="kolom">
+                    <h2>Interest</h2>
+                    <div class="interest-list">
+                    <li>Programming</li>
+                    <li>Traveling</li>
+                    <li>Writting</li>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="awards">
+            <div class="tengah">
+                <div class="kolom">
+                    <p class="deskripsi">Awards</p>
+                    <h2>Kejuaraan</h2>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
 </html>
